@@ -45,24 +45,52 @@ body{
     width: 260px;
     left:0;
     display: none;
-    background-color: whitesmoke;
+    background-color: #f1f1f1;
     box-shadow: gray 5px 20px 20px;
 }
-.body *{
-      position: absolute;
-      z-index: 100;
-}
+
 .body:hover .left{
     display: block;
  
 }
-.h1-title{position: absolute;
+.h1-title{position: relative;
        top: 55px;
        color: #8e44ad;
        animation: title 2s infinite;
+       text-align: center;
        }
 @keyframes title{
         0%{text-shadow: none;}
         50%{text-shadow: #3498db 5px 5px 8px;}
         100%{text-shadow: none;}
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 260px;
+    height: 100vh/*225px*/;
+    background-color: rgba(90, 158, 221, 0.712);
+}
+ 
+li a {
+    position: relative; 
+    display: block;
+    color: #000;
+    padding: 18px 15px;
+    text-decoration: none;
+    font-size: 15px;
+}
+ 
+/* 鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    background: linear-gradient(240deg,#8e44ad,#3498db,#8e44ad);
+    background-size: 150%;
+    animation: li 1s;
+    color: white;
+    border-radius: 5px;
+}
+@keyframes li {
+    from{background-position: 100%;}
+    to{background-position: 450%;}
 }
