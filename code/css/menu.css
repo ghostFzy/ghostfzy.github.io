@@ -1,0 +1,92 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.top{
+    position:absolute;
+    top:0;
+    width:100%;
+    height: 50px;
+    z-index: 1;
+    background:linear-gradient(240deg,rgb(214, 214, 214),rgb(231, 230, 230),rgb(214,214,214));
+    background-size:200%;
+    animation:top 1.5s infinite;
+    
+}
+@keyframes top{
+        from{background-position: 100%;}
+        to{background-position: 450%;}
+}
+.logo{border-radius:50%;
+      margin: auto;
+      width:50px;
+      height:50px;
+}
+.menu{width: 40px;
+      height: 40px;
+      position: fixed;
+      left:0;
+      top:5px;
+      border-radius: 5px;
+      background-color: #fff;
+      }
+.menu i{
+        padding: 7px;
+}
+.menu:hover{
+            border-style:solid;
+            border-color:dodgerblue;
+            border-width:2px ;
+}
+.left{
+    position: absolute;
+    height: 100vh;
+    width: 260px;
+    left:0;
+    display: none;
+    background-color: #f1f1f1;
+    box-shadow: gray 5px 20px 20px;
+}
+
+.body:hover .left{
+    display: block;
+ 
+}
+
+@keyframes title{
+        0%{text-shadow: none;}
+        50%{text-shadow: #3498db 5px 5px 8px;}
+        100%{text-shadow: none;}
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 260px;
+    height: 100vh/*225px*/;
+    background-color: rgba(90, 158, 221, 0.712);
+    filter: contrast(180%);
+}
+ 
+li a {
+    position: relative; 
+    display: block;
+    color: #000;
+    padding: 18px 15px;
+    text-decoration: none;
+    font-size: 15px;
+}
+ 
+/* 鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    background: linear-gradient(240deg,#8e44ad,#3498db,#8e44ad);
+    background-size: 150%;
+    animation: li 1s;
+    color: white;
+    border-radius: 5px;
+}
+@keyframes li {
+    from{background-position: 100%;}
+    to{background-position: 450%;}
+}
