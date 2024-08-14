@@ -1,0 +1,58 @@
+body{
+    overflow: visible;
+}
+.table-ul{
+       position: absolute;
+       top:50px;
+       list-style-type: none;
+       display: grid;
+       grid-row-gap: 20px;
+       grid-column-gap: 20px;
+       grid-template-rows: auto auto auto;
+       
+}
+.table-ul a{
+         color: #000000;
+         text-decoration: none;
+         
+}
+.table-ul li{
+            display: grid;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+}
+.table-ul li strong{
+             color: blue;
+             grid-row-start: 1;
+             grid-row-end: 3;
+}
+.download{
+    height: 120px;
+    width: 120px;
+    border-style:solid ;
+    border-width: 0.1px;
+    border-color: #999;
+    border-radius: 10px;
+    background-color: #fff;
+    
+    
+}
+.download:hover{
+          border-color:dodgerblue ;
+          transform: translateY(-5px);
+          box-shadow:#999 0px 5px 15px;
+          cursor: pointer;
+}
+
+.download i{
+                margin: 10px 42px;
+                padding: auto;
+                font-size: 40px;
+}
+.text{
+    text-align: center;
+    font-size: 13px;
+    
+}
